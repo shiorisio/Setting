@@ -6,6 +6,7 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 export PATH=$PATH:/usr/local/bin
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/
 
 # Uncomment if necessary
 #export PATH=$HOME/opt/bin:$PATH
@@ -14,7 +15,8 @@ export PATH=$PATH:/usr/local/bin
 
 # Aliases
 alias ls="ls -G"
-alias rm="rm -i"
+#alias rm="rm -i"
+alias rm="trash"
 alias q="exit"
 alias lv="less"
 alias c="clear"
