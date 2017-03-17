@@ -1,0 +1,13 @@
+# -----------------------
+
+# Last Update: 2017-03-17
+
+# -----------------------
+
+#!/bin/bash
+set -euo pipefail
+
+if [ ! -e .gitignore ]; then
+        touch .gitignore
+        gibo python >> .gitignore
+fi
