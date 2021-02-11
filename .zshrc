@@ -1,3 +1,5 @@
+# Updated: 2021-02-11
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000000
@@ -6,7 +8,9 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 export PATH=$PATH:/usr/local/bin
-export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/
+export PYTHONPATH=$PYTHONPATH:/Users/shio/.pyenv/versions/3.9.1/lib/python3.9/site-packages
+# export PYTHONPATH=$PYTHONPATH:/Users/shio/.pyenv/versions/3.7.0/lib/python3.7/site-packages
+# export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/
 
 # Uncomment if necessary
 #export PATH=$HOME/opt/bin:$PATH
