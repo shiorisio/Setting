@@ -1,4 +1,4 @@
-# Updated: 2021-02-11
+# echo $SHELL
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -8,19 +8,25 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 export PATH=$PATH:/usr/local/bin
-export PYTHONPATH=$PYTHONPATH:/Users/shio/.pyenv/versions/3.9.1/lib/python3.9/site-packages
-# export PYTHONPATH=$PYTHONPATH:/Users/shio/.pyenv/versions/3.7.0/lib/python3.7/site-packages
-# export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/
+# export PATH="$HOME/.pyenv/shims:$PATH"
+# export PYTHONPATH=$PYTHONPATH:/Users/shsfc/.pyenv/versions/3.8.0/lib/python3.8/site-packages
+#export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/
+
+export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/shims:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
 
 # Uncomment if necessary
-#export PATH=$HOME/opt/bin:$PATH
-#export LD_LIBRARY_PATH=$HOME/opt/lib
-#export PKG_CONFIG_PATH=$HOME/opt/lib/pkgconfig
+# export PATH=$HOME/opt/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/opt/lib
+export PKG_CONFIG_PATH=$HOME/opt/lib/pkgconfig
 
 # Aliases
 alias ls="ls -G"
 #alias rm="rm -i"
-alias rm="trash"
+alias rm="rmtrash"
 alias q="exit"
 alias lv="less"
 alias c="clear"
